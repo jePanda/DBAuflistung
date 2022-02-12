@@ -1,0 +1,5 @@
+birthday='2002-02-02'
+
+SELECT DATE_FORMAT(FROM_DAYS(DATEDIFF(NOW(), birthday)), "%Y")+0 AS age from person;
+
+-- result = 20 years
